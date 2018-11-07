@@ -157,7 +157,7 @@ Mehrere Komponenten: DNS, Zertifikate
         $ postconf smtp_tls_security_level
         smtp_tls_security_level = dane
 
-1.  Zitat von http://www.postfix.org/TLS_README.html#client_tls_dane:
+1.  Zitat von <http://www.postfix.org/TLS_README.html#client_tls_dane>:
 
     > The "dane" level is a stronger form of opportunistic TLS that is
     > resistant to man in the middle and downgrade attacks when the
@@ -178,10 +178,10 @@ Mehrere Komponenten: DNS, Zertifikate
 ## Geschichte
 
 1.  Initiative von Jan Behrendt zur verplichtenden Nutzung von DNSSEC und TLS
-    1.  https://wiki.init.mpg.de/share/DNSSEC
-    1.  https://wiki.init.mpg.de/share/TLS
-    1.  https://wiki.init.mpg.de/share/BPG/MailService
-1.  Sonderpreis 2015: https://wiki.init.mpg.de/share/Communication/ITCommunityAward/2015
+    1.  <https://wiki.init.mpg.de/share/DNSSEC>
+    1.  <https://wiki.init.mpg.de/share/TLS>
+    1.  <https://wiki.init.mpg.de/share/BPG/MailService>
+1.  Sonderpreis 2015: <https://wiki.init.mpg.de/share/Communication/ITCommunityAward/2015>
 
 ## Aktueller Stand
 
@@ -195,7 +195,7 @@ Mehrere Komponenten: DNS, Zertifikate
 ##  Textdatei mit Domains mit korrektem Zertifikat
 
 1.  Ähnlich HTTPS-Everywhere
-1.  Git-Depot: https://gitlab.com/dpkg/tls-policy
+1.  Git-Depot: <https://gitlab.com/dpkg/tls-policy>
 1.  Zusammenführungsanfragen (Merge-Requests)
 1.  Für alle MTA-Betreiber (insbesondere Unis)
 
@@ -217,7 +217,7 @@ Aktuell:
 
 ## `smtp_tls_policy_maps`
 
-http://www.postfix.org/postconf.5.html#smtp_tls_policy_maps:
+<http://www.postfix.org/postconf.5.html#smtp_tls_policy_maps>:
 
 > Specify zero or more "type:name" lookup tables, separated by whitespace or
 > comma. Tables will be searched in the specified order until a match is found. 
