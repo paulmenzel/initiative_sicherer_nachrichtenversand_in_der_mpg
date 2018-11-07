@@ -182,9 +182,10 @@ Mehrere Komponenten: DNS, Zertifikate
 
 ## Aktueller Stand
 
-1.  DNSSEC und DANE wenig verbreitet
+1.  DNSSEC wenig verbreitet
+1.  DANE noch weniger
 1.  MTA-STS noch in Kinderschuhen
-    1.  Erste Verbindung ungesichert
+    1.  Nachteil: Erste Verbindung ungesichert
 1.  Eigene Lösung
 
 ##  Textdatei mit Domains mit korrektem Zertifikat
