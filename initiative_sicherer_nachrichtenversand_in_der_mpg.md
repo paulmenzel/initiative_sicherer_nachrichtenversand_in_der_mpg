@@ -201,8 +201,27 @@ Mehrere Komponenten: DNS, Zertifikate
 
 ## Beispiel Postfix
 
-1.  tls\_policy
-1.  Kommasepariert
+Aktuell:
+
+    $ postconf smtp_tls_policy_maps
+    smtp_tls_policy_maps = hash:/project/mx/etc/tls_policy
+
+Änderung:
+
+    $ postconf smtp_tls_policy_maps
+    smtp_tls_policy_maps = btree:/etc/postfix/tls_policy_extern
+                           btree:/etc/postfix/tls_policy_fraunhofer
+                           btree:/etc/postfix/tls_policy_helmholtz
+                           btree:/etc/postfix/tls_policy_leibniz
+                           btree:/etc/postfix/tls_policy_mpg
+
+## `smtp_tls_policy_maps`
+
+http://www.postfix.org/postconf.5.html#smtp_tls_policy_maps:
+
+> Specify zero or more "type:name" lookup tables, separated by whitespace or
+> comma. Tables will be searched in the specified order until a match is found. 
+
 1.  cron-job oder abonnieren der Änderungen
 
 ## Fazit
