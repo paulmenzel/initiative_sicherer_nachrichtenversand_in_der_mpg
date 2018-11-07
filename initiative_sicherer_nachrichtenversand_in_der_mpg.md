@@ -148,12 +148,30 @@ Mehrere Komponenten: DNS, Zertifikate
 
 1.  DFN kein DNSSEC
 1.  Seit zwei Jahren
-1.  Stand: 1. Halbjahr 2019
+1.  Aktueller Stand: Einführung im 1.\ Halbjahr 2019
 
 ## Postfix-Konfiguration
 
-1.  tls_polcy: dane
-1.  Zitat:
+1.  Client:
+
+        $ postconf smtp_tls_security_level
+        smtp_tls_security_level = dane
+
+1.  Zitat von http://www.postfix.org/TLS_README.html#client_tls_dane:
+
+    > The "dane" level is a stronger form of opportunistic TLS that is
+    > resistant to man in the middle and downgrade attacks when the
+    > destination domain uses DNSSEC to publish DANE TLSA records for its MX
+    > hosts. If a remote SMTP server has "usable" (see section 3 of RFC 7672)
+    > DANE TLSA records, the server connection will be authenticated. When
+    > DANE authentication fails, there is no fallback to unauthenticated or
+    > plaintext delivery.
+    >
+    > If TLSA records are published for a given remote SMTP server (implying
+    > TLS support), but are all "unusable" due to unsupported parameters or
+    > malformed data, the Postfix SMTP client will use mandatory
+    > unauthenticated TLS. Otherwise, when no TLSA records are published, the
+    > Postfix SMTP client behavior is the same as with may.
 
 # MPG
 
