@@ -144,7 +144,7 @@ Mehrere Komponenten: DNS, Zertifikate
     TLSv1.2 with cipher \
     ECDHE-RSA-AES256-GCM-SHA384 \(256/256 bits)
 
-## Probleme mit DFN-Mailsupport
+## Probleme bei Nutzung von DFN-Mailsupport
 
 1.  DFN kein DNSSEC
 1.  Seit zwei Jahren
