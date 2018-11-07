@@ -15,7 +15,7 @@
 
 Folien in Markdown mit [Pandoc](https://pandoc.org/) nach LaTeX-Beamer umgewandelt, verfügbar auf GitHub.
 
-TinyURL: <https://tinyurl.com/smtphttp>
+TinyURL: <https://tinyurl.com/smtpinitiative>
 
 <https://github.com/paulmenzel/initiative_sicherer_nachrichtenversand_in_der_mpg>
 
