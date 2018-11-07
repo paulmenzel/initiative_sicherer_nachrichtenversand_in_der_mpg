@@ -173,52 +173,6 @@ Mehrere Komponenten: DNS, Zertifikate
     > unauthenticated TLS. Otherwise, when no TLSA records are published, the
     > Postfix SMTP client behavior is the same as with may.
 
-# MPG
-
-# Inkorrekte MX-Einträge
-
-## Beispiel GV
-
-    $ host -t mx mpg.de
-    mpg.de mail is handled by 5 mx1.mpg.de.
-    mpg.de mail is handled by 5 mx2.mpg.de.
-    $ host mx1.mpg.de
-    mx1.mpg.de has address 194.95.232.60
-    mx1.mpg.de has address 194.95.238.60
-    mx1.mpg.de has address 194.95.234.60
-    $ host 194.95.232.60
-    60.232.95.194.in-addr.arpa domain name pointer \
-    mfilter-123-1-1.mx.srv.dfn.de.
-
-Keine Antwort von postmaster@mpg.de auf Nachricht.
-
-## Betroffen (9. November 2017)
-
--  Mindestens 15 Einrichtungen mit veralteten mx??.mpg.de MX-Einträgen.
--  Mindestens 4 Einrichtungen mit veralteten mx??.gwdg.de MX-Einträgen.
-
-## Problem Verwaltungsadressen
-
-```
-$ host vw.molgen.mpg.de
-vw.molgen.mpg.de mail is handled by 5 mx2.mpg.de.
-vw.molgen.mpg.de mail is handled by 5 mx1.mpg.de.
-```
-
-```
-$ host vw.molgen.mpg.de
-vw.molgen.mpg.de mail is handled by \
-5 mfilter-123-1-2.mx.srv.dfn.de.
-vw.molgen.mpg.de mail is handled by \
-5 mfilter-123-1-1.mx.srv.dfn.de.
-vw.molgen.mpg.de mail is handled by \
-5 mfilter-123-1-3.mx.srv.dfn.de.
-```
-
-Bitte überprüfen!
-
-GWDG und DFN sollten aktiv werden.
-
 # Initiative
 
 ## Geschichte
