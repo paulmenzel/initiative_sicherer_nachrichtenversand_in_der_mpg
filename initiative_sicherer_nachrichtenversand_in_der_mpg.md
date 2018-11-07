@@ -185,6 +185,7 @@ Mehrere Komponenten: DNS, Zertifikate
 
 ## Aktueller Stand
 
+1.  Postfix: `/etc/postfix/tls_policy` mit `mpg.de encrypt` und `*.mpg.de encrypt`
 1.  DNSSEC wenig verbreitet
 1.  DANE noch weniger
 1.  MTA-STS noch in Kinderschuhen
