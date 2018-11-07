@@ -177,8 +177,11 @@ Mehrere Komponenten: DNS, Zertifikate
 
 ## Geschichte
 
-1.  2011(?) Jan Behrendt TLS
-1.  Community-Award
+1.  Initiative von Jan Behrendt zur verplichtenden Nutzung von DNSSEC und TLS
+    1.  https://wiki.init.mpg.de/share/DNSSEC
+    1.  https://wiki.init.mpg.de/share/TLS
+    1.  https://wiki.init.mpg.de/share/BPG/MailService
+1.  Sonderpreis 2015: https://wiki.init.mpg.de/share/Communication/ITCommunityAward/2015
 
 ## Aktueller Stand
 
