@@ -192,7 +192,7 @@ Mehrere Komponenten: DNS, Zertifikate
     1.  Nachteil: Erste Verbindung ungesichert
 1.  Eigene Lösung
 
-##  Textdatei mit Domains mit korrektem Zertifikat
+## Textdatei mit Domains mit korrektem Zertifikat
 
 1.  Ähnlich HTTPS-Everywhere
 1.  Git-Depot: <https://gitlab.com/dpkg/tls-policy>
