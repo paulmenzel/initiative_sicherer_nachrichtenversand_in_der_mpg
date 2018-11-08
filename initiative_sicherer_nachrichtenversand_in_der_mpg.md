@@ -224,6 +224,11 @@ Aktuell:
 
 1.  cron-job oder abonnieren der Änderungen
 
+## Weitere Anforderungen
+
+1.  TLS-Version
+1.  Schlüssel
+
 ## Fazit
 
 1.  MPG-Netz auch Vorbildwirkung
